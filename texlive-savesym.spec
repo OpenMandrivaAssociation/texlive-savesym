@@ -45,6 +45,7 @@ corresponds to the most recently loaded version of \XXX.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/savesym/savesym.sty
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +56,5 @@ corresponds to the most recently loaded version of \XXX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
