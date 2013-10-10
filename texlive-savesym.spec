@@ -1,12 +1,12 @@
-# revision 15878
+# revision 31565
 # category Package
 # catalog-ctan /macros/latex/contrib/savesym/savesym.sty
-# catalog-date 2007-01-14 15:20:52 +0100
+# catalog-date 2013-09-02 18:12:33 +0200
 # catalog-license lppl
-# catalog-version 1.1
+# catalog-version 1.2
 Name:		texlive-savesym
-Version:	1.1
-Release:	2
+Version:	1.2
+Release:	1
 Summary:	Redefine symbols where names conflict
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/savesym/savesym.sty
@@ -47,17 +47,3 @@ corresponds to the most recently loaded version of \XXX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
-+ Revision: 755794
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 719485
-- texlive-savesym
-- texlive-savesym
-- texlive-savesym
-- texlive-savesym
-
