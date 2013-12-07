@@ -6,7 +6,7 @@
 # catalog-version 1.2
 Name:		texlive-savesym
 Version:	1.2
-Release:	4
+Release:	5
 Summary:	Redefine symbols where names conflict
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/savesym/savesym.sty
