@@ -1,17 +1,11 @@
-# revision 31565
-# category Package
-# catalog-ctan /macros/latex/contrib/savesym/savesym.sty
-# catalog-date 2013-09-02 18:12:33 +0200
-# catalog-license lppl
-# catalog-version 1.2
 Name:		texlive-savesym
-Version:	1.2
-Release:	10
+Version:	31565
+Release:	1
 Summary:	Redefine symbols where names conflict
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/savesym/savesym.sty
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/savesym.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/savesym.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ back to \XXX and defines a new command, \yyyXXX, which
 corresponds to the most recently loaded version of \XXX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -40,7 +34,7 @@ corresponds to the most recently loaded version of \XXX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
