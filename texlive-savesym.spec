@@ -3,7 +3,7 @@ Version:	31565
 Release:	2
 Summary:	Redefine symbols where names conflict
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/savesym/savesym.sty
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/savesym/savesym.sty
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/savesym.r%{version}.tar.xz
 BuildArch:	noarch
